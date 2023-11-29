@@ -1,0 +1,130 @@
+:root {
+  --color-azul: #288CF0; /* Definición de la variable para el color azul */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+}
+
+.cv-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.sidebar {
+  flex: 1;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  flex: 2;
+  padding-left: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--color-azul); /* Utiliza la variable para el color azul */
+}
+
+.skills {
+  border: 2px solid var(--color-azul); /* Utiliza la variable para el borde */
+  background-color: #7FC6F4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 10px;
+}
+
+.skills li:last-child {
+  margin-bottom: 0;
+}
+
+.skills li::before {
+  content: '\2022';
+  color: var(--color-azul); /* Utiliza la variable para el color azul */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.socials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.socials li {
+  margin-bottom: 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #F08628;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--color-azul); /* Utiliza la variable para el borde */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.socials a:hover {
+  background-color: var(--color-azul); /* Utiliza la variable para el color azul */
+  color: white;
+}
+
+.personal-info {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.personal-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.personal-info li {
+  margin-bottom: 10px;
+}
+
+.personal-info li:last-child {
+  margin-bottom: 0;
+}
+
+.personal-info li::before {
+  content: '\2022';
+  color: var(--color-azul); /* Utiliza la variable para el color azul */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
